@@ -136,7 +136,7 @@ if (media >= 6){
 }
 */
 // -------------------------------------- cod01?------------
-
+/*
 let num1 = Number = prompt("Digite sua primeira nota");
 let num2 = Number = prompt("Digite sua segunda nota");
 let num3 = Number = prompt("Digite sua terceira nota");
@@ -144,10 +144,48 @@ let num4 = Number = prompt("Digite sua quarta nota");
 
 let Aprovado = "Aluno aprovado"
 let reprovado = "Aluno reprovado"
-let soma = Number = num1 + num2 + num3 + num4
+let soma = (num1 + num2 + num3 + num4) /4
 if (soma <= 4)
 {
     alert(reprovado);
 } else{
     alert(Aprovado);
 };
+*/
+// -------------------------------------- aula 05 -- cod01------------
+/*
+let num1 = Number(prompt("Digite o primeiro número: "));
+let num2 = Number(prompt("Digie o segundo número: "));
+let operador = prompt("Digite qual operação quer fazer: ");
+let resultado;
+
+switch (operador) {
+    case "+":
+     resultado = num1 + num2; 
+     break;
+    case "-":
+        resultado = num1 - num2;
+        break;
+    case "*":
+        resultado = num1 * num2;
+        break;
+    case "/":
+        resultado = num1 / num2;
+        break;
+    }
+
+    alert (`O resultado é ${resultado}`)
+    */
+// ------------------------------ aula 05 -------- cod02------------
+
+let num1 = Number(prompt("Digite um número: "));
+let num2 = Number(prompt("Digite outro número: "));
+let num3 = Number(prompt("Digite um terceiro número: "));
+
+if (num1 > num2 && num1 > num3) {
+    alert (`O primeiro, número ${num1} é o maior`);
+} else if (num2 > num1 & num2 > num3) {
+    alert (`O segundo, número ${num2} é o maior`); 
+} else {
+    alert (`O terceiro, número ${num3} é o maior número`);
+}
