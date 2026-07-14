@@ -177,15 +177,40 @@ switch (operador) {
     alert (`O resultado é ${resultado}`)
     */
 // ------------------------------ aula 05 -------- cod02------------
-
+/*  
 let num1 = Number(prompt("Digite um número: "));
 let num2 = Number(prompt("Digite outro número: "));
 let num3 = Number(prompt("Digite um terceiro número: "));
 
 if (num1 > num2 && num1 > num3) {
     alert (`O primeiro, número ${num1} é o maior`);
-} else if (num2 > num1 & num2 > num3) {
+} else if (num2 > num1 && num2 > num3) {
     alert (`O segundo, número ${num2} é o maior`); 
 } else {
     alert (`O terceiro, número ${num3} é o maior número`);
+}
+*/
+// ------------------------------ aula 05 -------- cod03------------
+/*
+Algritmos para fazer um calculo IMC:
+
+1 - perguntar o peso da pessoa
+2 - perguntar a altura da pessoa
+3 - calcular a fórmula IMC do peso / altura²
+4 - criar extrutura condicional para saber em que nivel de IMC está
+5 = mostrar o resultado do IMC
+*/
+
+let peso = Number(prompt("Qual é seu peso? ").replace(",","."));
+let altura = Number(prompt("Qual é sua altura? ").replace(",","."));
+let soma = peso / (altura * altura);
+ soma = soma.toFixed(2)
+if (soma < 18.5) {
+    alert (`Abaixo do peso, IMC = ${soma}`);
+} else if (soma > 18.5 && soma < 24.9) {
+    alert (`Peso ideal, IMC = ${soma}`);
+} else if (soma > 20.5 && soma < 29.9) {
+    alert (`Sobrepeso, IMC ${soma}`);
+} else {
+    alert (`Obesidade, IMC = ${soma}`);
 }
