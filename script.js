@@ -207,9 +207,9 @@ let soma = peso / (altura * altura);
  soma = soma.toFixed(2)
 if (soma < 18.5) {
     alert (`Abaixo do peso, IMC = ${soma}`);
-} else if (soma > 18.5 && soma < 24.9) {
+} else if (soma >= 18.5 && soma < 24.9) {
     alert (`Peso ideal, IMC = ${soma}`);
-} else if (soma > 20.5 && soma < 29.9) {
+} else if (soma >= 25.5 && soma <= 29.9) {
     alert (`Sobrepeso, IMC ${soma}`);
 } else {
     alert (`Obesidade, IMC = ${soma}`);
