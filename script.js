@@ -199,7 +199,7 @@ Algritmos para fazer um calculo IMC:
 3 - calcular a fórmula IMC do peso / altura²
 4 - criar extrutura condicional para saber em que nivel de IMC está
 5 = mostrar o resultado do IMC
-*/
+
 
 let peso = Number(prompt("Qual é seu peso? ").replace(",","."));
 let altura = Number(prompt("Qual é sua altura? ").replace(",","."));
@@ -215,3 +215,5 @@ if (soma < 18.5) {
 } else {
     alert (`Obesidade, IMC = ${soma}`);
 }
+*/
+
