@@ -216,4 +216,13 @@ if (soma < 18.5) {
     alert (`Obesidade, IMC = ${soma}`);
 }
 */
+ // ------------------------------ aula 06 -------- cod00------------
+// Crie um cóigo que peça um número e conte a tábuada de 1 até 10
 
+let contador = 1;
+let num = Number(130);
+let resultado = num * contador;
+while (contador < 11) {
+   console.log (`${num} x ${contador} = ${num * contador}`);
+   contador++
+}
