@@ -217,12 +217,50 @@ if (soma < 18.5) {
 }
 */
  // ------------------------------ aula 06 -------- cod00------------
-// Crie um cóigo que peça um número e conte a tábuada de 1 até 10
+/* Crie um cóigo que peça um número e conte a tábuada de 1 até 10
 
 let contador = 1;
-let num = Number(130);
-let resultado = num * contador;
-while (contador < 11) {
-   console.log (`${num} x ${contador} = ${num * contador}`);
-   contador++
+let num = Number(prompt("Digite um número para saber a tabuada de 1 até 100: "));
+let resultadoFinal = "";
+while (contador < 111) {
+   let resultado = num * contador;
+
+   resultadoFinal = resultadoFinal + (`${num} x ${contador} = ${resultado}\n`)
+    contador++
+}
+
+alert (resultadoFinal);
+*/
+
+// ------------------------------ aula 06 -------- cod01------------
+
+/* 
+let contador = 1;
+while (contador <= 10) {
+   console.log (`Valor é ${contador}`);
+   contador++;
+}
+console.log("Laço de repetição finalizado!");
+*/
+/*
+let contador = 10;
+while (contador >= 0) {
+   console.log (`Valor é ${contador}`);
+   contador--;
+}
+console.log("Laço de repetição finalizado!");
+*/
+/*
+let contador = 10;
+while (contador >= 0) {
+   console.log (`Valor é ${contador}`);
+   contador--;
+}
+console.log("Laço de repetição finalizado!");
+*/
+
+for (i = 1; i <= 10; i++){
+let valor = 7
+
+console.log (`${valor} x ${i} = ${valor * i}`)
 }
